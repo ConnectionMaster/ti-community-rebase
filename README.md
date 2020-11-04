@@ -1,4 +1,4 @@
-# GitHub action to automatically rebase PRs
+# GitHub action to automatically rebase PRs, inspired by [rebase](https://github.com/cirrus-actions/rebase)
 
 After installation simply comment `/rebase` to trigger the action:
 
@@ -23,8 +23,9 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - name: Automatic Rebase
-      uses: cirrus-actions/rebase@1.3.1
+    - name: ti-community-rebase
+      uses: tidb-community-bots/ti-community-rebase@v1.0.1
+
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```

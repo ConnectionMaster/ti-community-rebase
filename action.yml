@@ -1,0 +1,9 @@
+name: 'ti-community-rebase'
+description: 'GitHub action to automatically rebase PRs'
+author: 'hi-rustin'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'monitor'
+  color: 'yellow'
